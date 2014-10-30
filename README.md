@@ -4,7 +4,8 @@ apify
 Apify helps turn routes into a JSON object that can be easily accessed and parsed by a front-end client.
 Please note that Apify is meant to be used with Rails, and is not supported for other Ruby frameworks.
 
-***To Use:***
+To Use:
+-------
 
 1.  Add the gem to your Gemfile:  `gem 'json_routes'`
 2.  Decide the base of the URL at which you want to access the JSON routes object, and mount json_rails's Engine there.  In `/config/routes.rb` add the following: 
