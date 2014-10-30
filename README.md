@@ -14,11 +14,11 @@ Please note that Apify is meant to be used with Rails, and is not supported for 
 **Coming Soon:**
 
 1.  Angular client library to parse the JSON tree and create a Javascript object, stored locally, that would enable you to do something like this:
-    $http
-      .post(API.routes.comments_url, {id: 1, content: "awesome!"})
-      .success(function(data, status, headers, config){
-        // yada yada
-    });
+                $http
+                    .post(API.routes.comments_url, {id: 1, content: "awesome!"})
+                    .success(function(data, status, headers, config){
+                    // yada yada
+                });
 
 2.  implementation of Listen gem, so you don't have to run the rake task in development with every new/updated route
 3.  TESTS! :)
