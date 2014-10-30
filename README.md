@@ -12,8 +12,10 @@ Please note that Apify is meant to be used with Rails, and is not supported for 
         mount JsonRoutes::Engine, at '/<base-name-of-your-choice>'  
 
 You might, for example, choose to mount at `/apify`, which would make the JSON routes object available at `/apify`.  You can play around with how you want this to look by mounting, and then seeing the result with `rake routes`.
+
 3.  Then run `rake json_routes` to initialize your JSON routes file.  **You will need to run this before every deployment (production mode), or with every change to `/config/routes.rb` (development mode).** 
   TODO: use Listen gem in development mode, to run this task automatically when the `routes.rb` file is updated.  
+
 4.  You're set up!  Navigate to `/<your base name>` to get the route JSON back.  
 Clients can save this locally, and use the `:name` of the route as a helper method in their code, rather than hard-coding the URL strings.  Clients can reference `/<your base name>/info` to see when the file was last updated.  It is our suggestion to save the JSON tree and this timestamp locally on the client, checking for updates to the JSON tree whenever a user logs in.
 
