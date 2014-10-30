@@ -20,7 +20,8 @@ To Use:
 4.  You're set up!  Navigate to `/<your base name>` to get the route JSON back.  
 Clients can save this locally, and use the `:name` of the route as a helper method in their code, rather than hard-coding the URL strings.  Clients can reference `/<your base name>/info` to see when the file was last updated.  It is our suggestion to save the JSON tree and this timestamp locally on the client, checking for updates to the JSON tree whenever a user logs in.
 
-**Coming Soon:**
+Coming Soon:
+------------
 
 1.  Angular client library to parse the JSON tree and create a Javascript object, stored locally, that would enable you to do something like this:
 
